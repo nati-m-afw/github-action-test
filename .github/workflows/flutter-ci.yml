@@ -5,12 +5,14 @@ on:
     branches:
       - main
       - master
+    paths:
+      - "flutter/client"
   pull_request:
     branches:
       - main
       - master
-  paths:
-    - "flutter/client"
+    paths:
+      - "flutter/client"
 
 jobs:
   ci:

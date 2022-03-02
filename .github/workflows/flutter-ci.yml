@@ -6,7 +6,7 @@ on:
       - main
       - master
     paths:
-      - "flutter/client"
+      - "flutter/client/**"
   pull_request:
     branches:
       - main

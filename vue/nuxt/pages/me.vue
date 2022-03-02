@@ -1,5 +1,5 @@
 !<template>
-  <div>Hello Me</div>
+  <div>Hello Me!</div>
 </template>
 v
 <script>

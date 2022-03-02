@@ -45,7 +45,7 @@ jobs:
         run: cd vue/nuxt && npm ci --prefer-offline --no-audit
 
       - name: Run linter 👀
-        run: cd vue/nuxt && npm run lint
+        run: cd vue/nuxt && npm run lintfix
 
       - name: Run tests 🧪
         run: cd vue/nuxt && npm run test

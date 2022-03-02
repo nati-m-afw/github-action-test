@@ -28,11 +28,8 @@ jobs:
         with:
           flutter-version: '2.10.2'
 
-      - name: Change directory🤞
-        run: cd flutter/client
-
       - name: Get all Flutter Packages
-        run: flutter pub get
+        run: cd flutter/client && flutter pub get
 
       - name: Run Flutter Test
-        run: flutter test
+        run: cd flutter/client && flutter test

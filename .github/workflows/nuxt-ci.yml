@@ -41,14 +41,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: Change Directory to Nuxt🤞
-        run: cd vue/nuxt
-
       - name: Install dependencies 👨🏻‍💻
-        run: npm ci --prefer-offline --no-audit
+        run: cd vue/nuxt && npm ci --prefer-offline --no-audit
 
       - name: Run linter 👀
-        run: npm run lint
+        run: cd vue/nuxt && npm run lint
 
       - name: Run tests 🧪
-        run: npm run test
+        run: cd vue/nuxt && npm run test

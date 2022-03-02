@@ -5,12 +5,14 @@ on:
     branches:
       - main
       - master
+    paths:
+      - "vue/nuxt"
   pull_request:
     branches:
       - main
       - master
-  paths:
-    - "vue/nuxt"
+    paths:
+      - "vue/nuxt"
 
 jobs:
   ci:
